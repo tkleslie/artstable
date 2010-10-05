@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  group_id: 1
+  date: 2010-10-04 15:53:14
+  venue_id: 1
+  description: MyString
+  price: 9.99
+  student: 9.99
+  senior: 9.99
+  box_office_id: 1
+
+two:
+  name: MyString
+  group_id: 1
+  date: 2010-10-04 15:53:14
+  venue_id: 1
+  description: MyString
+  price: 9.99
+  student: 9.99
+  senior: 9.99
+  box_office_id: 1

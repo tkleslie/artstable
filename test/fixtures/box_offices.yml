@@ -1,0 +1,41 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  phone: MyString
+  email: MyString
+  address: MyString
+  mon_from: 2010-10-04 15:58:58
+  mon_to: 2010-10-04 15:58:58
+  tue_from: 2010-10-04 15:58:58
+  tue_to: 2010-10-04 15:58:58
+  wed_from: 2010-10-04 15:58:58
+  wed_to: 2010-10-04 15:58:58
+  thu_from: 2010-10-04 15:58:58
+  thu_to: 2010-10-04 15:58:58
+  fri_from: 2010-10-04 15:58:58
+  fri_to: 2010-10-04 15:58:58
+  sat_from: 2010-10-04 15:58:58
+  sat_to: 2010-10-04 15:58:58
+  sun_from: 2010-10-04 15:58:58
+  sun_to: 2010-10-04 15:58:58
+
+two:
+  name: MyString
+  phone: MyString
+  email: MyString
+  address: MyString
+  mon_from: 2010-10-04 15:58:58
+  mon_to: 2010-10-04 15:58:58
+  tue_from: 2010-10-04 15:58:58
+  tue_to: 2010-10-04 15:58:58
+  wed_from: 2010-10-04 15:58:58
+  wed_to: 2010-10-04 15:58:58
+  thu_from: 2010-10-04 15:58:58
+  thu_to: 2010-10-04 15:58:58
+  fri_from: 2010-10-04 15:58:58
+  fri_to: 2010-10-04 15:58:58
+  sat_from: 2010-10-04 15:58:58
+  sat_to: 2010-10-04 15:58:58
+  sun_from: 2010-10-04 15:58:58
+  sun_to: 2010-10-04 15:58:58

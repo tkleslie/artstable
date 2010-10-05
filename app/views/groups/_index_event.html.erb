@@ -1,0 +1,32 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Name</th>
+    <th>Venue</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Student</th>
+    <th>Senior</th>
+    <th>Box office</th>
+  </tr>
+
+<% events.each do |event| %>
+  <tr>
+    <td><%=h event.date %></td>
+    <td><%=h event.name %></td>
+    <td><a href="/venues/<%= event.venue_id %>"><%=h event.venue.name %></a></td>
+    <td><%=h event.description %></td>
+    <td><%=h event.price %></td>
+    <td><%=h event.student %></td>
+    <td><%=h event.senior %></td>
+    <td><a href="/box_offices/<%= event.box_office_id %>"><%=h event.box_office.name %></a></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

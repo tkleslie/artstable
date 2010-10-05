@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  street_1: MyString
+  street_2: MyString
+  city: MyString
+  province: MyString
+  postal: MyString
+  notes: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_address: MyString
+  web_site_url: MyString
+  latitude: 9.99
+  longitude: 9.99
+
+two:
+  name: MyString
+  street_1: MyString
+  street_2: MyString
+  city: MyString
+  province: MyString
+  postal: MyString
+  notes: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_address: MyString
+  web_site_url: MyString
+  latitude: 9.99
+  longitude: 9.99

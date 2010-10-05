@@ -1,0 +1,49 @@
+<h1>Listing venues</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Street 1</th>
+    <th>Street 2</th>
+    <th>City</th>
+    <th>Province</th>
+    <th>Postal</th>
+    <th>Notes</th>
+    <th>Contact name</th>
+    <th>Contact email</th>
+    <th>Contact phone</th>
+    <th>Contact address</th>
+    <th>Web site url</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @venues.each do |venue| %>
+  <tr>
+    <td><%= venue.name %></td>
+    <td><%= venue.street_1 %></td>
+    <td><%= venue.street_2 %></td>
+    <td><%= venue.city %></td>
+    <td><%= venue.province %></td>
+    <td><%= venue.postal %></td>
+    <td><%= venue.notes %></td>
+    <td><%= venue.contact_name %></td>
+    <td><%= venue.contact_email %></td>
+    <td><%= venue.contact_phone %></td>
+    <td><%= venue.contact_address %></td>
+    <td><%= venue.web_site_url %></td>
+    <td><%= venue.latitude %></td>
+    <td><%= venue.longitude %></td>
+    <td><%= link_to 'Show', venue %></td>
+    <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
+    <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Venue', new_venue_path %>

@@ -13,7 +13,11 @@ Artstable::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :groups
+  resources :types
+  resources :events
+  resources :venues
+  resources :box_offices
 
   # Sample resource route with options:
   #   resources :products do
@@ -50,7 +54,7 @@ Artstable::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "welcome#index"
+  root :to => "groups#show"
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @group.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @group.type_id %>
+</p>
+
+<p>
+  <b>Contact name:</b>
+  <%= @group.contact_name %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%= @group.contact_email %>
+</p>
+
+<p>
+  <b>Contact phone:</b>
+  <%= @group.contact_phone %>
+</p>
+
+<p>
+  <b>Contact address:</b>
+  <%= @group.contact_address %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @group.user_id %>
+</p>
+
+<div id="events">
+<%= render :partial=>"index_event", :locals=>{:events=>@group.events} %>
+</div>
+
+<%= link_to "Refresh events", 
+  :url=>"/groups/#{@group.id}/events",
+  :method=>"get",
+  :update=>"events",
+  :remote => true %>
+
+  <% if @group.user_id = current_user.id %>
+    <%= render :partial=>"new_event", :locals=>{:event=>Event.new(:group_id=>@group.id)} %>
+  <% else %>
+  <% end %>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

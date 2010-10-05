@@ -1,0 +1,57 @@
+<h1>Listing box_offices</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Mon from</th>
+    <th>Mon to</th>
+    <th>Tue from</th>
+    <th>Tue to</th>
+    <th>Wed from</th>
+    <th>Wed to</th>
+    <th>Thu from</th>
+    <th>Thu to</th>
+    <th>Fri from</th>
+    <th>Fri to</th>
+    <th>Sat from</th>
+    <th>Sat to</th>
+    <th>Sun from</th>
+    <th>Sun to</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @box_offices.each do |box_office| %>
+  <tr>
+    <td><%= box_office.name %></td>
+    <td><%= box_office.phone %></td>
+    <td><%= box_office.email %></td>
+    <td><%= box_office.address %></td>
+    <td><%= box_office.mon_from %></td>
+    <td><%= box_office.mon_to %></td>
+    <td><%= box_office.tue_from %></td>
+    <td><%= box_office.tue_to %></td>
+    <td><%= box_office.wed_from %></td>
+    <td><%= box_office.wed_to %></td>
+    <td><%= box_office.thu_from %></td>
+    <td><%= box_office.thu_to %></td>
+    <td><%= box_office.fri_from %></td>
+    <td><%= box_office.fri_to %></td>
+    <td><%= box_office.sat_from %></td>
+    <td><%= box_office.sat_to %></td>
+    <td><%= box_office.sun_from %></td>
+    <td><%= box_office.sun_to %></td>
+    <td><%= link_to 'Show', box_office %></td>
+    <td><%= link_to 'Edit', edit_box_office_path(box_office) %></td>
+    <td><%= link_to 'Destroy', box_office, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Box office', new_box_office_path %>
